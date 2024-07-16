@@ -1,0 +1,128 @@
+@font-face {
+    font-family: myFont;
+    src: url(../images/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont, Arial, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+
+input{
+    color: rgb(0, 0, 0);
+    width: 25em;  
+    height: 3em;  
+    font-size: 1em;
+    font-family: cursive;
+}
+h1{
+    text-align: center;
+    background-color: #ECCA9C;
+    height: 2em;
+    width: 10em;
+    border-radius: 25px;
+    font-size:2em;
+    box-shadow: 0 4px 10px rgba(170, 20, 0, 0.5);
+}
+
+#random-word-btn{
+    margin: 3em;
+    padding: 30px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(170, 20, 0, 0.5);
+    border: none;
+    outline: 1px solid blue;
+}
+
+.image-section {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+#random-word-btn{
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-top: 1em;
+    color: rgb(66, 56, 56);
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+/*here is the fliper */
+.main-container {
+    position: relative;
+    width: 30%;
+    min-width: 11em;
+    height: 15em;
+    top: 3em;
+    left: -4em;
+    margin-left:0px ;
+}
+
+
+.thecard{
+    position: absolute;
+    border-radius: 15px;
+    left: 15%;
+    width: 100%;
+    min-width: 16.5em;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 10px rgba(170, 20, 0, 0.5);
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    background-color: #FFDB5C;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.thefront p{
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    background-color:#A1DD70;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

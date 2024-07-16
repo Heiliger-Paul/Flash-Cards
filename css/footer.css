@@ -1,0 +1,72 @@
+@font-face {
+    font-family: myFont;
+    src: url(../images/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body {
+    font-family: myFont, Arial, sans-serif;
+}
+
+footer{
+    background-color: #A79277;
+    padding-top: 5rem;
+    margin-top: 13rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer-container > div h4 {
+    margin-bottom: 1.4rem;
+    font-size: 1.4em;
+}
+
+.footer-1 p{
+    margin: 0 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(102, 100, 98);
+}
+
+.footer-socials{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid #0C0C0C;
+}
+
+@media screen and (max-width:1024px) {
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:600px) {
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer-1 p{
+        margin: 1rem auto;
+    }
+
+    .footer-socials{
+        justify-content: center;
+    }
+}
